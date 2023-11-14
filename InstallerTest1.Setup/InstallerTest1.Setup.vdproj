@@ -44,6 +44,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.6.0.x64"
+                    {
+                    "Name" = "8:.NET ランタイム 6.0.14 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.6.0.x64"
+                    }
+                }
             }
         }
         "Release"
@@ -173,7 +181,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:InstallerTest1"
         "ProductCode" = "8:{6483E861-89AE-4C45-AA24-2323FC1C3A24}"
-        "PackageCode" = "8:{ED8AE525-39DE-4FE9-A83A-E03781BD2279}"
+        "PackageCode" = "8:{80A21439-4435-4D36-B3DB-0F2E57131AF9}"
         "UpgradeCode" = "8:{7AD17EB9-04E3-4C75-B9AF-B3BAB3AE95D6}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -263,8 +271,8 @@
                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_FADB6CA78CCE42FDADB91ACAC65E213F"
                                     {
                                     "Name" = "8:TestValue"
-                                    "Condition" = "8:"
-                                    "Transitive" = "11:FALSE"
+                                    "Condition" = "8:REINSTALL <> \"ALL\""
+                                    "Transitive" = "11:TRUE"
                                     "ValueTypes" = "3:1"
                                     "Value" = "8:[TESTVALUE]"
                                     }
@@ -958,7 +966,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B298C064159C4A58A3907BD16258ED53"
             {
-            "SourcePath" = "8:..\\InstallerTest1\\obj\\Release\\net6.0\\apphost.exe"
+            "SourcePath" = "8:..\\InstallerTest1\\obj\\Debug\\net6.0\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_943696B1003D44689E3181812B2FB10E"
